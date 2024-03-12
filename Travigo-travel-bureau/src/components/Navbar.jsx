@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import logo from '../images/logo.png'
-import menu from '../images/menu.svg'
+import logo from '../images/logo.png';
+import menu from '../images/menu.svg';
 
 const Navbar = ({navlinks}) => {
   return (
@@ -25,7 +25,8 @@ const Navbar = ({navlinks}) => {
         </ul>
       </nav>
       </header> 
-      <popupMenu navlinks={navlinks}/>
+ 
+    
   </>
   )
 }
