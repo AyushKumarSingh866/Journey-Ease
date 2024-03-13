@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     font-family: "Open Sans", sans-serif;
-  }
+  
 
   /* container: ; */
   .travigo-container{
@@ -32,4 +32,18 @@
   .drop-shadow-emrald{
     filter: drop-shadow(0.1rem 0.1rem 1rem rgba(74 222 128 / 80%));
   } 
+}
+
+/* popupState */
+.showpopup{
+  opacity: 1;
+  visibility: visible ;
+  transform: skewY(0deg) translateY(0px);
+}
+
+.noshowpopup{
+  opacity: 0;
+  visibility: hidden;
+  transform: skewY(3deg) translateY(-30px);
+}
 }
