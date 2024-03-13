@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import logo from '../images/logo.png';
 import menu from '../images/menu.svg';
+import PopupMenu from './PopupMenu';
 
 const Navbar = ({navlinks}) => {
+  const [popupState, setPopupState] = useState(false);
+  const onTriggerPopup = () => setPopupState(!popupState);
+
+  // console.log(popupState);
   return (
     <>
      <header className='flex items-center justify-center w-auto h-auto absolute top-7 left-0 right-0'>
@@ -21,10 +26,12 @@ const Navbar = ({navlinks}) => {
           <li><button type='button' className='button-emrald px-7 text-base '>Join Us</button></li>
         </ul>
         <ul className='hidden lg:flex items-center'>
-          <li><button type='button' className='flex items-center justify-center transition-all duration-200 active:scale-90'><img src={menu} alt="menu/svg" className='object-cover shadow-sm filter' /></button></li>
+          <li><button type='button' className='flex items-center justify-center transition-all duration-200 active:scale-90 cursor-pointer'onClick={onTriggerPopup}><img src={menu} alt="menu/svg" className='object-cover shadow-sm filter' /></button></li>
         </ul>
       </nav>
       </header> 
+      <PopupMenu navlinks={navlinks}
+      popupState={popupState} />
  
     
   </>
