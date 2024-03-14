@@ -38,7 +38,7 @@
 .showpopup{
   opacity: 1;
   visibility: visible ;
-  transform: skewY(0deg) translateY(0px);
+  transform: skewY(0deg) translateY(10px);
 }
 
 .noshowpopup{
