@@ -1,6 +1,6 @@
 import React from 'react';
-import { Navbar, Hero, Footer, Memory, Explore } from './components';
-import { hero, navlinks, memory, placesAPI} from './data/travigoData';
+import { Navbar, Hero, Footer, Memory, Explore, Advertise } from './components';
+import { hero, navlinks, memory, placesAPI, brands} from './data/travigoData';
 const App = () => {
   return (
     <div>
@@ -9,6 +9,7 @@ const App = () => {
       <Hero hero={hero}/>
       <Memory memory={memory} />
       <Explore title="Explore The Beauty of World" placesAPI={placesAPI}/>
+      <Advertise brands={brands}/>
       <Footer/>
       
     </div>
