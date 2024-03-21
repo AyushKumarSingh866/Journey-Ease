@@ -13,4 +13,5 @@ const Advertise = ({brands}) => {
   )
 }
 
+
 export default Advertise
