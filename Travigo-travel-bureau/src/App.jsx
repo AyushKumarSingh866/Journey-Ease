@@ -10,7 +10,7 @@ const App = () => {
       <Memory memory={memory} />
       <Explore title="Explore The Beauty of World" placesAPI={placesAPI}/>
       <Advertise brands={brands}/>
-      <Pricings />
+      <Pricings  pricingapi = {pricingapi}/>
       <Footer/>
       
     </div>
