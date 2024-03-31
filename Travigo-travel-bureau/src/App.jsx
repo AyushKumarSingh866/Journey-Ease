@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Hero, Footer, Memory, Explore, Advertise, Pricings } from './components';
-import { hero, navlinks, memory, placesAPI, brands} from './data/travigoData';
+import { hero, navlinks, memory, placesAPI, brands, pricingapi} from './data/travigoData';
 const App = () => {
   return (
     <div>
