@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Pricecard = ({plan: {planicon , title, text, plantype, plancontent}}) => {
+const Pricecard = ({plan: {planicon, title, text, plantype, plancontent}}) => {
   // console.log(plan);
   return (
     <>
@@ -8,7 +8,7 @@ const Pricecard = ({plan: {planicon , title, text, plantype, plancontent}}) => {
       <div className='flex items-center justify-between'>
         <div className='flex items-center gap-5'>
           <div className='grid items-center'>
-            <img src={planicon} alt="planicon/img" className='' />
+            <img src={planicon} alt="planicon/img" className='w-14 h-14 lg:h-12 lg:w-12 object-cover' />
           </div>
           <div className='grid items-center'>
             <h1 className=''>{title}</h1>

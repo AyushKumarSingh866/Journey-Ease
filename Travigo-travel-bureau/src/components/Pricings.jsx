@@ -18,7 +18,7 @@ const Pricings = ({ pricingapi: {title, text, btn1, btn2, plans} }) => {
           </div>
         </div>
         <div className=''>
-          {plans?.map((val, i) => (
+          {plans?.map((plan, i) => (
             <Pricecard key={i} val={plan}/>
           ))}
         </div>
