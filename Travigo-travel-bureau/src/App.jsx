@@ -15,6 +15,8 @@ const App = () => {
       <Newsletter/>
       <Footer footerAPI={footerAPI} />
       
+
+      
     </div>
   );
 };
